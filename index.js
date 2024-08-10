@@ -5,11 +5,11 @@ import {
     makeDeleteUserController,
     makeGetUserByIdController,
     makeUpdateUserController,
-    makeUpdateTransactionController,
 } from './src/factories/controllers/user.js'
 import {
     makeCreateTransactionController,
     makeGetTransactionsByUserIdController,
+    makeUpdateTransactionController,
 } from './src/factories/controllers/transaction.js'
 
 const app = express()
