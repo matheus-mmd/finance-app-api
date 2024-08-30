@@ -93,7 +93,7 @@ describe('PostgresGetUserBalanceRepository', () => {
         expect(prismaSpy).toHaveBeenCalledWith({
             where: {
                 user_id: fakeUser.id,
-                type: TransactionType.EARNING,
+                type: TransactionType.INVESTMENT,
             },
             _sum: {
                 amount: true,
