@@ -5,7 +5,7 @@ import dayjs from 'dayjs'
 
 describe('PostgresCreateTransactionRepository', () => {
     it('should create a transaction on db', async () => {
-        const user = await prisma.user.create({ data: user })
+        await prisma.user.create({ data: user })
         const sut = new PostgresCreateTransactionRepository()
 
         const result = await sut.execute({ ...transaction, user_id: user.id })
